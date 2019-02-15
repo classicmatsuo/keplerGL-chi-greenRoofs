@@ -1,0 +1,166 @@
+{
+  "version": "v1",
+  "config": {
+    "visState": {
+      "filters": [],
+      "layers": [
+        {
+          "id": "rgocbx",
+          "type": "point",
+          "config": {
+            "dataId": "my_data",
+            "label": "Vegetated SqFt",
+            "color": [
+              221,
+              178,
+              124
+            ],
+            "columns": {
+              "lat": "LATITUDE",
+              "lng": "LONGITUDE",
+              "altitude": null
+            },
+            "isVisible": true,
+            "visConfig": {
+              "radius": 98,
+              "fixedRadius": false,
+              "opacity": 0.8,
+              "outline": false,
+              "thickness": 2,
+              "colorRange": {
+                "name": "ColorBrewer YlGn-6",
+                "type": "sequential",
+                "category": "ColorBrewer",
+                "colors": [
+                  "#ffffcc",
+                  "#d9f0a3",
+                  "#addd8e",
+                  "#78c679",
+                  "#31a354",
+                  "#006837"
+                ],
+                "reversed": false
+              },
+              "radiusRange": [
+                0,
+                98
+              ],
+              "hi-precision": false
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "VEGETATED_SQFT",
+              "type": "integer"
+            },
+            "colorScale": "quantile",
+            "sizeField": {
+              "name": "VEGETATED_SQFT",
+              "type": "integer"
+            },
+            "sizeScale": "sqrt"
+          }
+        },
+        {
+          "id": "r7j92p",
+          "type": "point",
+          "config": {
+            "dataId": "my_data",
+            "label": "Green Roof SqFt",
+            "color": [
+              18,
+              147,
+              154
+            ],
+            "columns": {
+              "lat": "LATITUDE",
+              "lng": "LONGITUDE",
+              "altitude": null
+            },
+            "isVisible": true,
+            "visConfig": {
+              "radius": 100,
+              "fixedRadius": false,
+              "opacity": 0.8,
+              "outline": false,
+              "thickness": 2,
+              "colorRange": {
+                "name": "ColorBrewer Greys-6",
+                "type": "sequential",
+                "category": "ColorBrewer",
+                "colors": [
+                  "#252525",
+                  "#636363",
+                  "#969696",
+                  "#bdbdbd",
+                  "#d9d9d9",
+                  "#f7f7f7"
+                ],
+                "reversed": true
+              },
+              "radiusRange": [
+                0,
+                100
+              ],
+              "hi-precision": false
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "TOTAL_ROOF_SQFT",
+              "type": "integer"
+            },
+            "colorScale": "quantile",
+            "sizeField": {
+              "name": "TOTAL_ROOF_SQFT",
+              "type": "integer"
+            },
+            "sizeScale": "sqrt"
+          }
+        }
+      ],
+      "interactionConfig": {
+        "tooltip": {
+          "fieldsToShow": {
+            "my_data": [
+              "ID",
+              "HOUSE_NUMBER",
+              "PRE_DIR",
+              "STREET_NAME",
+              "STREET_TYPE"
+            ]
+          },
+          "enabled": true
+        },
+        "brush": {
+          "size": 0.5,
+          "enabled": false
+        }
+      },
+      "layerBlending": "normal",
+      "splitMaps": []
+    },
+    "mapState": {
+      "bearing": 0,
+      "dragRotate": false,
+      "latitude": 41.89735996015949,
+      "longitude": -87.66031753634871,
+      "pitch": 0,
+      "zoom": 11.075010793556979,
+      "isSplit": false
+    },
+    "mapStyle": {
+      "styleType": "muted_night",
+      "topLayerGroups": {},
+      "visibleLayerGroups": {
+        "label": true,
+        "road": true,
+        "border": false,
+        "building": true,
+        "water": true,
+        "land": true
+      },
+      "mapStyles": {}
+    }
+  }
+}
