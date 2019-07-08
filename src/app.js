@@ -43,6 +43,7 @@ const KeplerGl = require('kepler.gl/components').injectComponents([
 // Chicago Green Roofs dataset
 import greenroofsConfig from './data/greenroofs-config.json';
 import greenRoofs from './data/green-roofs.js'
+// import greenRoofs from './data/keplergl.json'
 
 // Sample data
 /* eslint-disable no-unused-vars */

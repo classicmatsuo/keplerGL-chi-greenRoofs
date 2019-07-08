@@ -5,15 +5,15 @@
       "filters": [],
       "layers": [
         {
-          "id": "re9a6qf",
+          "id": "rgocbx",
           "type": "point",
           "config": {
-            "dataId": "6o5ono9no",
-            "label": "Point",
+            "dataId": "my_data",
+            "label": "Vegetated SqFt",
             "color": [
-              106,
-              187,
-              107
+              221,
+              178,
+              124
             ],
             "columns": {
               "lat": "LATITUDE",
@@ -22,47 +22,37 @@
             },
             "isVisible": true,
             "visConfig": {
-              "radius": 10,
+              "radius": 98,
               "fixedRadius": false,
               "opacity": 0.8,
               "outline": false,
               "thickness": 2,
               "colorRange": {
-                "name": "Global Warming",
+                "name": "ColorBrewer YlGn-6",
                 "type": "sequential",
-                "category": "Uber",
+                "category": "ColorBrewer",
                 "colors": [
-                  "#5A1846",
-                  "#900C3F",
-                  "#C70039",
-                  "#E3611C",
-                  "#F1920E",
-                  "#FFC300"
-                ]
+                  "#ffffcc",
+                  "#d9f0a3",
+                  "#addd8e",
+                  "#78c679",
+                  "#31a354",
+                  "#006837"
+                ],
+                "reversed": false
               },
               "radiusRange": [
                 0,
-                100
+                98
               ],
               "hi-precision": false
-            },
-            "textLabel": {
-              "field": null,
-              "color": [
-                255,
-                255,
-                255
-              ],
-              "size": 50,
-              "offset": [
-                0,
-                0
-              ],
-              "anchor": "middle"
             }
           },
           "visualChannels": {
-            "colorField": null,
+            "colorField": {
+              "name": "VEGETATED_SQFT",
+              "type": "integer"
+            },
             "colorScale": "quantile",
             "sizeField": {
               "name": "VEGETATED_SQFT",
@@ -72,15 +62,15 @@
           }
         },
         {
-          "id": "aq2y6y9",
+          "id": "r7j92p",
           "type": "point",
           "config": {
-            "dataId": "6o5ono9no",
-            "label": "Green_Roofs",
+            "dataId": "my_data",
+            "label": "Green Roof SqFt",
             "color": [
-              113,
-              113,
-              113
+              18,
+              147,
+              154
             ],
             "columns": {
               "lat": "LATITUDE",
@@ -89,47 +79,37 @@
             },
             "isVisible": true,
             "visConfig": {
-              "radius": 10,
+              "radius": 100,
               "fixedRadius": false,
               "opacity": 0.8,
-              "outline": true,
-              "thickness": 0.5,
+              "outline": false,
+              "thickness": 2,
               "colorRange": {
-                "name": "Global Warming",
+                "name": "ColorBrewer Greys-6",
                 "type": "sequential",
-                "category": "Uber",
+                "category": "ColorBrewer",
                 "colors": [
-                  "#5A1846",
-                  "#900C3F",
-                  "#C70039",
-                  "#E3611C",
-                  "#F1920E",
-                  "#FFC300"
-                ]
+                  "#252525",
+                  "#636363",
+                  "#969696",
+                  "#bdbdbd",
+                  "#d9d9d9",
+                  "#f7f7f7"
+                ],
+                "reversed": true
               },
               "radiusRange": [
                 0,
                 100
               ],
               "hi-precision": false
-            },
-            "textLabel": {
-              "field": null,
-              "color": [
-                255,
-                255,
-                255
-              ],
-              "size": 50,
-              "offset": [
-                0,
-                0
-              ],
-              "anchor": "middle"
             }
           },
           "visualChannels": {
-            "colorField": null,
+            "colorField": {
+              "name": "TOTAL_ROOF_SQFT",
+              "type": "integer"
+            },
             "colorScale": "quantile",
             "sizeField": {
               "name": "TOTAL_ROOF_SQFT",
@@ -142,7 +122,7 @@
       "interactionConfig": {
         "tooltip": {
           "fieldsToShow": {
-            "6o5ono9no": [
+            "my_data": [
               "ID",
               "HOUSE_NUMBER",
               "PRE_DIR",
@@ -163,10 +143,10 @@
     "mapState": {
       "bearing": 0,
       "dragRotate": false,
-      "latitude": 41.861958305104174,
-      "longitude": -87.65238912349714,
+      "latitude": 41.89735996015949,
+      "longitude": -87.66031753634871,
       "pitch": 0,
-      "zoom": 13.185061261068645,
+      "zoom": 11.075010793556979,
       "isSplit": false
     },
     "mapStyle": {
@@ -178,8 +158,7 @@
         "border": false,
         "building": true,
         "water": true,
-        "land": true,
-        "3d building": false
+        "land": true
       },
       "mapStyles": {}
     }
