@@ -1,6 +1,9 @@
-# Demo App
+# Kepler.gl mapping Chicago Public Dataset of Greenroof locations
 
-This is the src code of kepler.gl demo app.
+[dataset used in this project] (https://data.cityofchicago.org/Environment-Sustainable-Development/Green-Roofs/q3z3-udcz)
+
+
+![chicago green roofs](https://raw.githubusercontent.com/classicmatsuo/keplerGL-chi-greenRoofs/master/docs/chigreen.png)
 
 
 ### Local dev
